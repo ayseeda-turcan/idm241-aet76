@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <main>
+    <h1>Alpha Documentation</h1>
+    <p>Link to original site: <a href="https://www.pinterest.com/ideas" target="_blank">Pinterest</a></p>
+
+    <div class="pin-container">
+        <!-- CARD 1 -->
+        <div class="pin-card">
+            <img src="seal.jpg" alt="Pinterest Pin 1">
+            <div class="overlay">
+                <div class="overlay-center">
+                    <span class="open-text">Open</span>
+                </div>
+                <div class="overlay-bottom">
+                    <button class="icon">🔗</button>
+                    <button class="icon">⋯</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="pin-card">
+            <img src="seal.jpg" alt="Pinterest Pin 2">
+            <div class="overlay">
+                <div class="overlay-center">
+                    <span class="open-text">Open</span>
+                </div>
+                <div class="overlay-bottom">
+                    <button class="icon">🔗</button>
+                    <button class="icon">⋯</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="pin-card">
+            <img src="seal.jpg" alt="Pinterest Pin 3">
+            <div class="overlay">
+                <div class="overlay-center">
+                    <span class="open-text">Open</span>
+                </div>
+                <div class="overlay-bottom">
+                    <button class="icon">🔗</button>
+                    <button class="icon">⋯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Triggers</h2>
+    <h3>Pinterest Card: Under "What’s New on Pinterest".</h3>
+    <ul>
+        <li>Hover On</li>
+        <li>Hover Off</li>
+    </ul>
+
+    <h2>Rules</h2>
+    <h3>Pinterest Card</h3>
+    <ol>
+        <li>Hover On</li>
+            <ul>
+                <li>A semi-transparent dark overlay appears over the image</li>
+                <li>"Share" button and "More Options" icons appear</li>
+                <li>"Open" text appears</li>
+                <li>Cursor changes to pointer</li>
+            </ul>
+        <li>Hover Off</li>
+            <ul>
+                <li>Overlay disappears</li>
+                <li>Icons disappear</li>
+                <li>"Open" text disappears</li>
+                <li>Pointer returns to default cursor</li>
+            </ul>
+        </ol>
+
+    <h2>Feedback</h2>
+    <h3>Pinterest Card</h3>
+    <ol>
+        <li>Hover On</li>
+        <ul>
+            <li>A semi-transparent dark overlay appears over the image</li>
+            <li>"Share" button and "More Options" icons appear</li>
+            <li>"Open" text appears</li>
+            <li>Cursor changes to pointer</li>
+        </ul>
+            <li>Hover Off</li>
+        <ul>
+            <li>Overlay disappears</li>
+            <li>Icons disappear</li>
+            <li>"Open" text disappears</li>
+            <li>Pointer returns to default cursor</li>
+        </ul>
+    </ol>
+
+    <h2>Loops</h2>
+    <h3>Pinterest Card</h3>
+    <ul>
+        <li>None</li>
+    </ul>
+
+    <h2>Modes</h2>
+    <h3>Pinterest Card</h3>
+    <ul>
+        <li>None</li>
+    </ul>
+
+    <div class="image">
+        <img src="pinterest_preview.gif" alt="A gif showcasing how the pinterest pins look when hovering over them: a sark gray overlay appears along with two icons for sharing and other options.">
+    </div>
+</main>
+</body>
+</html>
