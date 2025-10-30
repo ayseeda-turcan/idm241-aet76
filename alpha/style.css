@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    max-width: 720px;
+    max-width: 900px;
     width: 100%;
     background-color: #ffffff;
 }
@@ -89,3 +89,13 @@ a:hover {
     background-color: #E60023;
     color: #fff;
 }  
+
+.triple-column-view {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-individual {
+    display: flex;
+    flex-direction: column;
+}
