@@ -190,7 +190,7 @@ a:hover {
     }
 }
 
-button {
+.header button {
     border-radius: 30px;
     border: none;
     background-color: #E60023;
@@ -200,7 +200,7 @@ button {
     margin: 1rem 0.5rem 2rem 0rem;
 }
 
-button:hover {
+.header button:hover {
     background-color: #a10018;
     cursor: pointer;
     box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.269);
