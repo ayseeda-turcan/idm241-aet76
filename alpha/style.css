@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -31,7 +33,7 @@ h1 {
 h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333333;
+    color: #E60023; /* PINTEREST RED */
     border-bottom: 2px solid #E60023;
     padding-bottom: 4px;
     margin-top: 2rem;
@@ -39,8 +41,8 @@ h2 {
 
 h3 {
     font-size: 1.1rem;
-    font-weight: 500;
-    color: #555555;
+    font-weight: 600;
+    color: #a10018;
     margin-top: 1rem;
 }
 
@@ -53,7 +55,7 @@ p {
 ul, ol {
     margin-left: 1.5rem;
     line-height: 1.6;
-    color: #444;
+    color: #444444;
 }
 
 a {
@@ -92,10 +94,27 @@ a:hover {
 
 .triple-column-view {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 .column-individual {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
+}
+
+button {
+    border-radius: 30px;
+    border: none;
+    background-color: #E60023;
+    color: #fff;
+    font-size: 16px;
+    padding: 1rem;
+    margin: 1rem 0.5rem 2rem 0rem;
+}
+
+button:hover {
+    background-color: #a10018;
+    cursor: pointer;
+    box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.269);
 }
