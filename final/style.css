@@ -4,24 +4,65 @@
     padding: 0;
 }
 
-body {
+nav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: hsl(351, 100%, 45%);
+    display: flex;
+    margin: 1rem 0rem 0rem 1rem;
+    border-radius: 2rem;
+    position: fixed;
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 100vh;
-    margin: 0;
-    padding: 40px 40px;
-    background-color: #ffffff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 200%;
-    color: #111111;
 }
 
+nav a {
+    text-decoration: none;
+    /* margin: 0.75rem; */
+    padding: 1rem 1rem;
+    color: #dedede;
+    background-color: #E60023;
+    border-radius: 2rem;
+    transition:
+    color 0.5s ease,
+    background-color 0.5s ease;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: #a10018;
+    color: #fff;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #111111;
+} 
+
 main {
-    max-width: 2000px;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start; */
+    min-height: 100vh;
+    margin: 0;
+    padding: 100px 20px;
+    line-height: 200%;
+    max-width: 100%;
     width: 100%;
     background-color: #ffffff;
 }
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 100px 40px;
+    max-width: 1200px;
+    width: 100%;
+    line-height: 200%;
+} */
 
 h1 {
     color: #E60023; /* PINTEREST RED */
@@ -86,11 +127,6 @@ a:hover {
     transform: scale(1.03);
 }
 
-::selection {
-    background-color: #E60023;
-    color: #fff;
-}  
-
 .triple-column-view {
     display: flex;
     justify-content: space-around;
@@ -105,21 +141,4 @@ a:hover {
 .column-individual ol > li {
     color: #a10018;
     font-weight: 600;
-
-}
-
-button {
-    border-radius: 30px;
-    border: none;
-    background-color: #E60023;
-    color: #fff;
-    font-size: 16px;
-    padding: 1rem;
-    margin: 1rem 0.5rem 2rem 0rem;
-}
-
-button:hover {
-    background-color: #a10018;
-    cursor: pointer;
-    box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.269);
 }
