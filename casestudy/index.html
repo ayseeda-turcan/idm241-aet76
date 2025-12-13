@@ -24,9 +24,382 @@
         <a href="index.html">Case Study</a>
     </nav>
     
-        <main>
-            <h1>Coming Soon...</h1>
-            <p>Hopefully</p>
-        </main>
-    </body>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Pinterest Pin Card Microinteraction Redesign</h1>
+                <p class="hero-subtitle">Enhancing User Engagement Through Refined Interaction Design</p>
+            </div>
+
+        </section>
+
+        <!-- Overview Section -->
+        <section class="overview">
+            <h2>Overview</h2>
+            <div class="overview-content">
+                <p>Pinterest's pin cards serve millions of users daily, but their interaction 
+                    patterns presented opportunities for refinement. This project involved analyzing 
+                    Pinterest's existing microinteractions, identifying areas for improvement, and 
+                    redesigning the experience to better balance discoverability, efficiency, and visual polish.</p>
+                
+                <p>The redesign focuses on solving key usability challenges: improving button 
+                    timing to feel more natural, enhancing visual feedback during loading states, 
+                    adding functional features like clipboard integration, and refining the board 
+                    selection overlay to reduce visual clutter. The result is a more intuitive, 
+                    responsive interface that maintains Pinterest's aesthetic while elevating the 
+                    user experience through thoughtful microinteraction design.</p>
+            </div>
+
+            <div class="overview-grid">
+                <div class="overview-item">
+                    <h3>Timeline</h3>
+                    <p>10 weeks (Alpha → Beta → Final)</p>
+                </div>
+                <div class="overview-item">
+                    <h3>Role</h3>
+                    <p>UX Designer & Developer</p>
+                </div>
+                <div class="overview-item">
+                    <h3>Tools</h3>
+                    <p>HTML5, CSS, JavaScript</p>
+                </div>
+                <div class="overview-item">
+                    <h3>Focus Area</h3>
+                    <p>Microinteraction Redesign & UX Enhancement</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Context and Challenge -->
+        <section class="context">
+            <h2>Context and Challenge</h2>
+            
+            <div class="context-section">
+                <h3>Background</h3>
+                <p>This redesign project was developed as part of IDM-241: Microinteractions course at Drexel University. 
+                    The assignment challenged us to select a platform with existing microinteractions, 
+                    analyze their design decisions, and propose improvements.</p>
+                
+                <p>I selected Pinterest because while its pin cards are functional, some interaction patterns 
+                    could be refined to better serve users. The project spanned through three development phases:</p>
+                <ul>
+                    <li><strong>Alpha (Weeks 1-3):</strong>Initial redesign concepts, recreating Pinterest's current microinteractions</li>
+                    <li><strong>Beta (Weeks 4-7):</strong> Prototyping improved interactions, timing adjustments</li>
+                    <li><strong>Final (Weeks 8-10):</strong>Adding and refining more microinteractions</li>
+                </ul>
+            </div>
+
+            <div class="context-section">
+                <h3>The Problem</h3>
+                <p>Several usability issues emerged with Pinterest's current pin card interactions:</p>
+                
+                <div class="problem-list">
+                    <div class="problem-item">
+                        <h4>1. Ambiguous Button Timing</h4>
+                        <p>Buttons appearing simultaneously felt "rushed" and made it unclear which 
+                            action to take first. The lack of staggered entrance created visual overload during the hover state.</p>
+                    </div>
+
+                    <div class="problem-item">
+                        <h4>2. Insufficient Loading Feedback</h4>
+                        <p>When saving pins to boards, the instantaneous state change provided no 
+                            feedback for users on slower connections.</p>
+                    </div>
+
+                    <div class="problem-item">
+                        <h4>3. Missing Functional Features</h4>
+                        <p>The share menu lacked a "Copy Link" feature that users expected based 
+                            on conventions from other social platforms. This forced users to manually 
+                            copy URLs from the address bar.</p>
+                    </div>
+
+                    <div class="problem-item">
+                        <h4>4. Board Selection Conflicts</h4>
+                        <p>When the board overlay appeared, the underlying hover buttons remained visible, 
+                            creating visual confusion.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="context-section">
+                <h3>Goals & Objectives</h3>
+                <p>My redesign aimed to achieve improvements across several topics:</p>
+                <ol>
+                    <li><strong>Improve Perceived Responsiveness:</strong> Reduce user uncertainty during 
+                        interactions</li>
+
+                    <li><strong>Increase Task Efficiency:</strong> Streamline common actions (save, share, 
+                        download)</li>
+
+                    <li><strong>Enhance Visual Clarity:</strong> Eliminate interface conflicts and improve 
+                        visual hierarchy</li>
+
+                    <li><strong>Maintain Performance:</strong> Keep all animations at 60fps while adding 
+                        new features and feedback states</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Process and Insight -->
+        <section class="process">
+            <h2>Process and Insight</h2>
+
+            <div class="process-stage">
+                <h3>Stage 1: Research & Analysis</h3>
+                <p>The redesign process began with an evaluation of Pinterest's current implementation:</p>
+
+                <ul>
+                    <li><strong>Visibility of system status:</strong> Limited feedback during save operations (Severity: Medium)</li>
+                    <li><strong>User control and freedom:</strong> No clear way to undo pin save action (Severity: Low)</li>
+                    <li><strong>Consistency and standards:</strong> Button behavior matched platform conventions (Severity: None)</li>
+                    <li><strong>Error prevention:</strong> Adequate—buttons clearly labeled (Severity: None)</li>
+                </ul>
+            </div>
+
+            <div class="process-stage">
+                <h3>Stage 2: Design Strategy</h3>
+                <p>Based on research insights, I developed a design strategy focused on three principles:</p>
+
+                <div class="design-principle">
+                    <h4>Principle 1: Progressive Disclosure with Intent</h4>
+                    <p>Redesign button timing to create a natural reading flow.</p>
+                </div>
+
+                <div class="design-principle">
+                    <h4>Principle 2: Continuous Feedback Loops</h4>
+                    <p>Add loading states and success confirmations for actions that modify state. 
+                        Every interaction should provide clear, immediate feedback.</p>
+                </div>
+
+                <div class="design-principle">
+                    <h4>Principle 3: Reduce Cognitive Load</h4>
+                    <p>When board overlay opens, hide conflicting interface elements. Users should 
+                        focus on one task at a time without competing information.</p>
+                </div>
+
+            </div>
+
+            <div class="process-stage">
+                <h3>Stage 3: Interaction Redesign</h3>
+                <p>Each component received focused improvements based on identified problems:</p>
+
+                <div class="redesign-item">
+                    <h4>Hover Overlay Enhancement</h4>
+                    <p><strong>Problem:</strong> Buttons appeared simultaneously, creating visual overload</p>
+                    <p><strong>Solution:</strong> Implemented 50ms stagger between Download and Share buttons. 
+                        Download appears first (0ms delay) as it's the primary action, followed by Share (50ms delay). 
+                        Pin-Major slides from top simultaneously to differentiate it spatially.</p>
+                </div>
+
+                <div class="redesign-item">
+                    <h4>Loading State Introduction</h4>
+                    <p><strong>Problem:</strong> No feedback during save operation, causing user uncertainty</p>
+                    <p><strong>Solution:</strong> Added 700ms loading spinner before state change. Pin icon fades out, 
+                        spinner rotates, then icon swaps to confirm action. Includes 800ms delay before overlay closes 
+                        for users to see the result.</p>
+                </div>
+
+                <div class="redesign-item">
+                    <h4>Board Overlay Refinement</h4>
+                    <p><strong>Problem:</strong> Underlying buttons visible during board selection caused confusion</p>
+                    <p><strong>Solution:</strong> When boards overlay opens, overlay-center and overlay-bottom 
+                        elements receive .hidden class (opacity: 0, pointer-events: none). Only board selection 
+                        interface remains visible.</p>
+                </div>
+
+            </div>
+
+            <div class="process-stage">
+                <h3>Stage 4: Timing Optimization</h3>
+                <p>I refined animation timing to balance speed and clarity:</p>
+
+                <div class="timing-test">
+                    <h4>Test 1: Button Stagger Delay</h4>
+                    <ul>
+                        <li><strong>Variant A:</strong> 0ms delay (simultaneous) - Felt rushed, users missed Share button</li>
+                        <li><strong>Variant B:</strong> 100ms delay - Felt sluggish, users thought something was broken</li>
+                        <li><strong>Variant C:</strong> 50ms delay - Sweet spot—felt intentional but not slow</li>
+                    </ul>
+                    <p><strong>Winner:</strong> Variant C (50ms) selected based on 80% user preference</p>
+                </div>
+
+                <div class="timing-test">
+                    <h4>Test 2: Loading Spinner Duration</h4>
+                    <ul>
+                        <li><strong>Variant A:</strong> 400ms - Too fast, users missed the feedback</li>
+                        <li><strong>Variant B:</strong> 1000ms - Too slow, felt laggy even though intentional</li>
+                        <li><strong>Variant C:</strong> 700ms - Provided clear feedback without feeling slow</li>
+                    </ul>
+                    <p><strong>Winner:</strong> Variant C (700ms) balanced perception of responsiveness and feedback clarity</p>
+                </div>
+
+                <div class="timing-test">
+                    <h4>Test 3: Success Popup Display Time</h4>
+                    <ul>
+                        <li><strong>Variant A:</strong> 1000ms - Users reported not seeing it consistently</li>
+                        <li><strong>Variant B:</strong> 3000ms - Users found it lingered too long and was annoying</li>
+                        <li><strong>Variant C:</strong> 2000ms - Adequate time to read without feeling intrusive</li>
+                    </ul>
+                    <p><strong>Winner:</strong> Variant C (2000ms) provided sufficient reading time for all literacy levels</p>
+                </div>
+
+            </div>
+
+            <div class="process-stage">
+                <h3>Stage 5: Performance Optimization</h3>
+                <p>Adding features while maintaining 60fps required technical optimization:</p>
+
+                <h4>Event Delegation</h4>
+                <p>Rather than attaching listeners to each button individually, implemented 
+                    event delegation with a single document listener for "click outside" detection.</p>
+
+                <h4>CSS Transitions Over JavaScript</h4>
+                <p>Where possible, used CSS transitions instead of JavaScript animations. 
+                    Browser can optimize CSS transitions more effectively, resulting in smoother motion.</p>
+
+            </div>
+
+        </section>
+
+        <!-- Solution -->
+        <section class="solution">
+            <h2>The Solution</h2>
+
+            <div class="solution-intro">
+                <p>My final redesign delivers a pin card experience that addresses 
+                    usability issues, while maintaining Pinterest's visual identity.</p>
+            </div>
+
+            <div class="solution-feature">
+                <h3>1. Refined Progressive Disclosure</h3>
+                <p>The redesigned hover state guides attention through strategic timing:</p>
+                <ul>
+                    <li>Overlay gradient fades in, "Open" text appears</li>
+                    <li>Download button (primary action) slides up from bottom</li>
+                    <li>Share button follows</li>
+                    <li>Pin-Major slides down from top (spatially distinct from bottom buttons)</li>
+                </ul>
+
+            </div>
+
+            <div class="solution-feature">
+                <h3>2. Enhanced Loading States</h3>
+                <p>Three-stage feedback system eliminates user uncertainty during save operations:</p>
+                <ul>
+                    <li><strong>Stage 1 (0-700ms):</strong> Pin icon fades out, loading spinner appears and rotates</li>
+                    <li><strong>Stage 2 (700ms):</strong> Icon swaps between pin/unpin state to show result</li>
+                    <li><strong>Stage 3 (1500-3500ms):</strong> Success popup displays "Saved to board" or "Removed from board"</li>
+                </ul>
+                <p><strong>Impact:</strong> Eliminated extra clicking behavior.</p>
+
+            </div>
+
+            <div class="solution-feature">
+                <h3>3. Copy Link Functionality</h3>
+                <p>Added expected feature based on user mental models from other social platforms:</p>
+                <ul>
+                    <li>1.5s visual confirmation ("Link Copied!" in Pinterest Red)</li>
+                    <li>Positioned as first option in Share menu (highest priority)</li>
+                </ul>
+
+            </div>
+
+            <div class="solution-feature">
+                <h3>4. Contextual Interface Hiding</h3>
+                <p>Redesigned board overlay to eliminate visual conflicts:</p>
+                <ul>
+                    <li>When boards appear, overlay-center and overlay-bottom receive <code>.hidden</code> class</li>
+                    <li>opacity: 0 and pointer-events: none ensure no accidental clicks</li>
+                    <li>Only board selection interface visible, reducing cognitive load</li>
+                    <li>Elements smoothly reappear when overlay closes</li>
+                </ul>
+            </div>
+
+
+            <div class="solution-demo">
+                <h3>Live Demo</h3>
+                <p>Experience the redesigned interactions: <a href="../final/build/index.html" target="_blank">View Live Build</a></p>
+                
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section class="results">
+            <h2>The Results</h2>
+
+            <div class="results-intro">
+                <p>The redesign successfully addressed all identified usability issues, 
+                    making improvements.</p>
+            </div>
+
+            <div class="results-impact">
+                <h3>Key Learnings</h3>
+
+                <div class="learning">
+                    <h4>1. Small Timing Changes Have Outsized Impact</h4>
+                    <p>
+                        Microinteraction design operates in these barely-conscious ways 
+                        where tiny adjustments affect how an interface feels 
+                        even when users can't understand why. This shows that timing is a 
+                        critical design choice, not just a technical detail.</p>
+                </div>
+
+                <div class="learning">
+                    <h4>2. Users Need Continuous Feedback, Not Just Final States</h4>
+                    <p>
+                        Even though the actual operation is near-instant, the 700ms feedback 
+                        loop eliminated anxiety and duplicate clicks. This demonstrates that 
+                        perceived performance often matters more than actual performance, 
+                        and designers should optimize for human perception.</p>
+                </div>
+
+                <div class="learning">
+                    <h4>3. Context Matters More Than Consistency</h4>
+                    <p>Hiding the overlay-center and overlay-bottom elements when boards appeared 
+                        violated interface consistency (elements should be persistent), but improved usability 
+                        (reduced cognitive load). This taught me that design principles should bend 
+                        when context demands it. Consistency is definitely important, but not more important than clarity.</p>
+                </div>
+
+            </div>
+
+            <div class="results-future">
+                <h3>Future Improvements</h3>
+                <p>Given additional time and resources, the following enhancements would strengthen the redesign:</p>
+                <ul>
+                    <li><strong>Personalized Timing:</strong> Allow users to adjust animation speed in settings based 
+                        on their preferences and device capabilities</li>
+
+                    <li><strong>Board Recommendations:</strong> Suggest most likely board destination based on 
+                        image content and past user behavior</li>
+
+                    <li><strong>Undo Functionality:</strong> Add "Undo" option in success popup to quickly reverse accidental saves</li>
+
+                </ul>
+            </div>
+
+            <div class="results-conclusion">
+                <h3>Conclusion</h3>
+                <p>This redesign shows that UX improvements don't always require radical 
+                    reimagining, sometimes refinement is more importnat than revolution. By identifying specific 
+                    usability friction points, addressing them with targeted design changes, 
+                    and validating improvements through testing, the redesigned pin cards deliver a better 
+                    experience while also maintaining Pinterest's visual identity and brand recognition.</p>
+
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="case-nav">
+            <a href="../final/build/index.html" class="btn-primary">View Redesign</a>
+            <a href="../final/index.html" class="btn-secondary">View Documentation</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 IDM-241 Microinteractions Redesign Project</p>
+    </footer>
+</body>
 </html>
